@@ -1,0 +1,84 @@
+
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f0f0f0;
+		padding: 5px 15px 5px 15px;
+	}
+
+	.category-container {
+		margin-bottom: 10px;
+	}
+
+	.category-title {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	.slider-container {
+		overflow-x: scroll;
+		white-space: nowrap;
+	}
+
+	.item {
+		display: inline-block;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	.item img {
+		max-width: 150px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+
+	.item-title {
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 5px;
+	}
+
+	.item-subtitle {
+		font-size: 14px;
+		color: #666;
+	}
+	
+	.item.selected {
+		border: 2px solid #007bff; /* Cambia el estilo de borde al seleccionar */
+	}		
+
+	.button-container {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Color de fondo para destacar el botón */
+    padding: 10px 0; /* Espaciado vertical para el botón */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Sombra bajo el contenedor */
+	}
+	
+	/* Estilos para el botón */
+	#share-button {
+		background-color: #18416c; /* Color de fondo del botón */
+		color: #fff; /* Color del texto del botón */
+		padding: 10px 20px; /* Espaciado interno del botón */
+		font-size: 16px; /* Tamaño de fuente del botón */
+		border: none;
+		border-radius: 5px; /* Bordes redondeados del botón */
+		cursor: pointer;
+		transition: background-color 0.3s; /* Transición suave de color de fondo */
+
+		/* Estilos para hacer que el botón sea fácil de tocar en dispositivos móviles */
+		-webkit-tap-highlight-color: transparent; /* Evita el resaltado de clic en iOS */
+		touch-action: manipulation; /* Mejora la respuesta táctil */
+	}
+
+	/* Estilos de hover para el botón */
+	#share-button:hover {
+		background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+	}
+
+	span.button-text {
+		padding-left: 31px;
+	}
+			
